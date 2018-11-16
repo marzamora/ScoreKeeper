@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -16,17 +17,26 @@ public class MainActivity extends AppCompatActivity {
     int score_A = 0;
     int score_B = 0;
 
-    String ADMOB_APP_ID = "ca-app-pub-5769766240110227~5892263464";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MobileAds.initialize(this, ADMOB_APP_ID);
+        /**  Initialize mobile ads SDK **/
+        MobileAds.initialize(this, "ca-app-pub-5769766240110227~5892263464");
+
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        /** Display Ad after it loads
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.loadAd(adRequest);
+            }
+        });  **/
 
         displayScore_A(score_A);
         displayScore_B(score_B);

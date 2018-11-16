@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ABMOB_TEST_ID"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="@string/ADMOB_TEST_ID" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -160,6 +161,6 @@
         android:onClick="resetScore"
         android:text="Reset"
         android:textColor="@android:color/white"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>
