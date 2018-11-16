@@ -6,24 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ABMOB_TEST_ID">
-    </com.google.android.gms.ads.AdView>
+        ads:adUnitId="@string/ABMOB_TEST_ID"></com.google.android.gms.ads.AdView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="64dp"
+        android:background="@drawable/gradient_background"
         android:orientation="horizontal"
-        android:background="@drawable/gradient_background">
+        android:paddingTop="64dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -44,8 +42,8 @@
                 android:id="@+id/scoreA_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="0"
                 android:textColor="@android:color/black"
@@ -63,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
                 android:onClick="addTwoPoints_A"
                 android:text="+2 Points"
                 android:textColor="@android:color/white" />
@@ -71,9 +70,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_button"
                 android:onClick="subPoint_A"
                 android:text="-1 Point"
-                android:background="@drawable/custom_button"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -81,9 +81,9 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="114dp">
+            android:layout_marginBottom="114dp"
+            android:background="@android:color/darker_gray">
 
         </View>
 
@@ -106,8 +106,8 @@
                 android:id="@+id/scoreB_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="0"
                 android:textColor="@android:color/black"
@@ -125,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
                 android:onClick="addTwoPoints_B"
                 android:text="+2 Points"
                 android:textColor="@android:color/white" />
@@ -133,6 +134,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_button"
                 android:onClick="subPoint_B"
                 android:text="-1 Point"
                 android:textColor="@android:color/white" />
@@ -147,10 +150,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="24dp"
+        android:background="@drawable/custom_button"
         android:onClick="resetScore"
         android:text="Reset"
-        android:textSize="16dp"
-        android:background="@color/colorDanger"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
 
 </RelativeLayout>
