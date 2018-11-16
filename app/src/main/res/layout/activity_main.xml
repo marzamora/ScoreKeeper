@@ -50,13 +50,30 @@
                 android:text="0"
                 android:textColor="@android:color/black"
                 android:textSize="64sp" />
-00b
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
                 android:onClick="addPoint_A"
                 android:text="+1 Point"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="addTwoPoints_A"
+                android:text="+2 Points"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="subPoint_A"
+                android:text="-1 Point"
+                android:background="@drawable/custom_button"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
@@ -102,6 +119,22 @@
                 android:layout_marginHorizontal="24dp"
                 android:onClick="addPoint_B"
                 android:text="+1 Point"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="addTwoPoints_B"
+                android:text="+2 Points"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="subPoint_B"
+                android:text="-1 Point"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>

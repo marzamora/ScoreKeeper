@@ -39,12 +39,34 @@ public class MainActivity extends AppCompatActivity {
         score_A++;
         displayScore_A(score_A);
     }
+    /** Add two points to A **/
+    public void addTwoPoints_A(View view) {
+        score_A++;
+        score_A++;
+        displayScore_A(score_A);
+    }
+    /** Subtract point from B **/
+    public void subPoint_A(View view) {
+        score_A--;
+        displayScore_A(score_A);
+    }
 
     /**
      * Add point for player B
      */
     public void addPoint_B(View view) {
         score_B++;
+        displayScore_B(score_B);
+    }
+    /** Add two points to A **/
+    public void addTwoPoints_B(View view) {
+        score_B++;
+        score_B++;
+        displayScore_B(score_B);
+    }
+    /** Subtract point from B **/
+    public void subPoint_B(View view) {
+        score_B--;
         displayScore_B(score_B);
     }
 
