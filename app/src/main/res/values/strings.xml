@@ -2,6 +2,6 @@
     <string name="app_name">Score Keeper</string>
     <string name="ABMOB_APP_ID">ca-app-pub-5769766240110227~5892263464</string>
     <string name="ABMOB_TEST_ID">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="version_code"></string>
+    <string name="version_code">1.00</string>
     <string name="version_name"></string>
 </resources>

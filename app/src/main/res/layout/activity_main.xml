@@ -52,7 +52,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addPoint_A"
                 android:text="+1 Point"
                 android:textColor="@android:color/white" />
@@ -60,7 +61,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:onClick="addTwoPoints_A"
                 android:text="+2 Points"
@@ -69,7 +71,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/custom_button"
                 android:onClick="subPoint_A"
@@ -116,7 +119,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addPoint_B"
                 android:text="+1 Point"
                 android:textColor="@android:color/white" />
@@ -124,7 +128,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:onClick="addTwoPoints_B"
                 android:text="+2 Points"
@@ -133,7 +138,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/custom_button"
                 android:onClick="subPoint_B"
