@@ -15,7 +15,7 @@
         android:layout_alignParentBottom="false"
         android:layout_marginTop="16dp"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/ABMOB_APP_ID">
+        ads:adUnitId="@string/ABMOB_TEST_ID">
     </com.google.android.gms.ads.AdView>
 
     <LinearLayout
@@ -115,6 +115,7 @@
         android:layout_margin="24dp"
         android:onClick="resetScore"
         android:text="Reset"
-        android:textColor="@android:color/white" />
+        android:background="@color/colorDanger"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>
