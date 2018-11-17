@@ -2,6 +2,8 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Access window background to set launch screen drawable -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#419D7A</item>
         <item name="colorPrimaryDark">#000000</item>

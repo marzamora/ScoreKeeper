@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/ADMOB_TEST_ID" />
 
@@ -22,7 +23,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/gradient_background"
         android:orientation="horizontal"
-        android:paddingTop="64dp">
+        android:layout_marginTop="64dp">
 
         <LinearLayout
             android:layout_width="0dp"
